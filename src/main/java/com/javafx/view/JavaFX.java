@@ -32,13 +32,7 @@ public class JavaFX  extends Application{
 		Scene scene= new Scene(layout,500,400);
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		
-		
-		
-		
-        
-
-		
+			
 	}
 
 }
