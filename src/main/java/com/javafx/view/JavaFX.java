@@ -4,9 +4,14 @@ import com.javafx.helper.Constants;
 import com.javafx.viewmodel.FileViewModel;
 
 import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -34,13 +39,23 @@ public class JavaFX  extends Application{
 	public void start(Stage primaryStage) throws Exception {
 
 		TextArea textArea = new TextArea();
+		textArea.setMaxHeight(Double.MAX_VALUE);
 		FileViewModel fileViewModel = new FileViewModel(primaryStage,textArea);
 		
-		Button saveButton = new Button(Constants.SAVE);
-		saveButton.setOnAction(x-> fileViewModel.saveButtonOnClick());
+		Button saveBtn = new Button(Constants.SAVE);
+		Button clearBtn = new Button(Constants.CLEAR);
 		
-		VBox layout= new VBox(10);
-		layout.getChildren().addAll(textArea,saveButton);
+		HBox horizontalBox= new HBox(10);
+		horizontalBox.setAlignment(Pos.CENTER);
+		horizontalBox.getChildren().addAll(saveBtn,clearBtn);
+		
+		saveBtn.setOnAction(x-> fileViewModel.saveButtonOnClick());
+		clearBtn.setOnAction(x-> textArea.clear());
+		
+		BorderPane layout= new BorderPane();
+		layout.setPadding(new Insets(10));
+		layout.setCenter(textArea);
+		layout.setBottom(horizontalBox);
 		
 		Scene scene= new Scene(layout,500,400);
 		primaryStage.setScene(scene);
