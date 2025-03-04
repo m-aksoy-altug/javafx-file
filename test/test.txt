@@ -1,11 +1,20 @@
-test
 
 
+java --module-path /home/altug/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-sources.jar:\
+	/home/altug/.m2/repository/org/openjfx/javafx-fxml/21.0.2:\
+	/home/altug/.m2/repository/org/openjfx/javafx-graphics/21.0.2:\
+	/home/altug/.m2/repository/org/openjfx/javafx-base/21.0.2 \
+	--add-modules javafx.controls,javafx.fxml \
+	-jar javafx-file-0.0.1-SNAPSHOT.jar
 
-/t
+
+java --module-path "/home/altug/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-sources.jar:\
+/home/altug/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-linux.jar:\
+/home/altug/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-linux.jar:\
+/home/altug/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-linux.jar" \
+--add-modules javafx.controls,javafx.fxml \
+-jar javafx-file-0.0.1-SNAPSHOT.jar
 
 
-\n
+<!--            /home/altug/.m2/repository/org/openjfx/javafx/21.0.2-->
 
-
-test

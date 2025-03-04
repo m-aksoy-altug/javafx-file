@@ -50,6 +50,7 @@ public class FileViewModel  {
 			try {
 				String fileNameMap = Validator.fileNameMapper(fileName);
 				FileModel.save(selectedDirectory,fileNameMap,input);
+				alert.showInfoAlert(Constants.SUCCESS,Constants.FILE_IS_SAVED);
 			} catch(InvalidFileException e) {
 				alert.showWarningAlert(Constants.ERROR,e.getMessage());
 				return;

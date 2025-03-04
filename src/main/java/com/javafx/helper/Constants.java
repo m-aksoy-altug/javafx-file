@@ -5,6 +5,7 @@ public class Constants  {
 	public static String SAVE="Save";
 	public static String ERROR="Error";
 	public static String WARNING ="Warning";
+	public static String SUCCESS ="Success";
 	public static String FILE_NAME ="File name";
 	public static String TXT_PREFIX=".txt";
 	public static String FILE_NAME_REGEX="^[a-zA-Z0-9_-]+\\.txt$";
@@ -16,5 +17,5 @@ public class Constants  {
 	public static String FILE_NAME_IS_EMPTY= "File name is empty or only contains whitespace character";
 	public static String FILE_NAME_MAX_CHAR= "File name can be maximum 255 characters, including its extension";
 	public static String FILE_CONTAINS_NOT_ALLOWED_CHARACTERS= "File name can contains only these characters [a-zA-Z0-9_-]";
-	
+	public static String FILE_IS_SAVED= "File is saved";
 }
