@@ -15,10 +15,7 @@ import javafx.scene.control.TextArea;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
-/*
- * Possible limitations:
- * - TextArea and TextInputDialog max capacities 
-*/
+
 public class FileViewModel  {
 	
 	private final Stage fileStage;
