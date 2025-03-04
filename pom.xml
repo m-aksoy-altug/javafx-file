@@ -72,7 +72,7 @@
                                 <excludes>
                                     <exclude>**/*-linux.jar</exclude>
                                      <exclude>**/META-INF/substrate/config/*-linux.json</exclude>
-                                    <exclude>module-info.class</exclude>
+                                    <!--<exclude>module-info.class</exclude>-->
                                 </excludes>
                             </filter>
                         </filters>
